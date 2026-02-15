@@ -89,9 +89,11 @@
         <h1>Happy Valentine's Day My little Princess💖</h1>
         <p id="compliment">You make my world brighter everyday💕</p>
 
-        <button class="button" onclick="showMessage(),playmusic()">Click for a Surprise 💌</button>
+        <button class="button" id="surprise" onclick="showMessage(),playmusic()">Click for a Surprise 💌</button>
 
-        <div id="message">UUMMWWAAHH😘❤ 
+        <div id="message">
+            <img src="cat-holding-a-rose.gif">
+            UUMMWWAAHH😘❤ 
             <hr>
             I love youuu soooo muchhhh😚💖
             <img src="us.jpg" alt="I love you" height="200">
@@ -99,7 +101,8 @@
 
         <script>
             function showMessage() {
-                document.getElementById("compliment").remove()
+                document.getElementById("surprise").remove(); 
+                document.getElementById("compliment").remove();
                 document.getElementById("message").style.display= "block";
             }
             function playmusic() {
@@ -125,5 +128,6 @@
     </body>
 
 </html>
+
 
 
